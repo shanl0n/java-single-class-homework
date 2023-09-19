@@ -4,15 +4,18 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class WaterBottleTest {
-
-  private WaterBottle bottle;
+// Declaring an instance of WaterBottle
+  private WaterBottle bottle; // null
 
   @Before
-  public void before() { bottle = new WaterBottle();
+  public void before() {
+    bottle = new WaterBottle();
   }
 
   @Test
-  public void hasVolume() { assertEquals(100, bottle.getVolume()); }
+  public void hasVolume() {
+    assertEquals(100, bottle.getVolume());
+  }
 
   @Test
   public void letsDrink() {
